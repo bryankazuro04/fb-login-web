@@ -6,7 +6,7 @@
     <title>FB Login</title>
   </head>
   <body>
-    <p id="profile"></p>
+    <!-- <p id="profile"></p>
     <fb:login-button scope="public_profile,email" onlogin="checkLoginState();"> </fb:login-button>
     <div id="fb-root"></div>
 
@@ -21,13 +21,32 @@
     ></div>
 
     <script
-      async
+      asyncs
       defer
       crossorigin="anonymous"
       src="https://connect.facebook.net/id_ID/sdk.js#xfbml=1&version=v18.0&appId=1099553874278619"
       nonce="ZKZHTiXm"
     ></script>
 
-    <script src="./script.js"></script>
+    <script src="./script.js"></script> -->
+
+    <div
+      class="fb-login-button"
+      data-width=""
+      data-size=""
+      data-button-type=""
+      data-layout=""
+      data-auto-logout-link="false"
+      data-use-continue-as="true"
+    ></div>
+
+    <div id="fb-root"></div>
+    <script
+      async
+      defer
+      crossorigin="anonymous"
+      src="https://connect.facebook.net/id_ID/sdk.js#xfbml=1&version=v18.0&appId=1099553874278619"
+      nonce="i7qQYBSh"
+    ></script>
   </body>
 </html>
