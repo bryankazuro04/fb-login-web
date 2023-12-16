@@ -5,6 +5,14 @@ window.fbAsyncInit = function () {
     version: "v18.0",
   });
   FB.AppEvents.logPageView();
+
+  function logoutFromFacebook() {
+    FB.logout(function (response) {
+      // Proses logout berhasil
+      console.log("Logged out from Facebook");
+      // Lakukan langkah logout di sini seperti menghapus token dari local storage dll.
+    });
+  }
 };
 
 (function (d, s, id) {
